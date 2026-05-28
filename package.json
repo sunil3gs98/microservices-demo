@@ -1,0 +1,36 @@
+{
+  "name": "github-branch-search-app",
+  "version": "1.0.0",
+  "description": "High-performance application to search files across 2500+ GitHub branches without lag",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "search": "node dist/index.js",
+    "cache:clear": "rm -rf .cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "search",
+    "branches",
+    "performance",
+    "parallel"
+  ],
+  "author": "sunil3gs98",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/graphql": "^7.0.2",
+    "@octokit/rest": "^20.0.2",
+    "chalk": "^5.3.0",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.3.1",
+    "pqueue": "^7.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
